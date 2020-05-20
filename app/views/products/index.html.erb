@@ -1,0 +1,11 @@
+<% cart.each do |item| %>
+    <li><%= item %></li>
+<% end %>
+
+
+<%= form_for cart do |f| %>
+    <%= f.label :product %>
+    <%= f.text_field :product %>
+
+    <%= f.submit 'add to cart' %>
+<% end %>
